@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -28,6 +30,28 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
+
+      {/* Social Media Links */}
+      <div className="absolute top-[80px] right-3 sm:top-[100px] sm:right-5 flex gap-2 sm:gap-4">
+        <a
+          href="https://www.linkedin.com/in/aavash-tamang-131a0a2b5/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A66C2] flex items-center justify-center text-white">
+            <FaLinkedin size={16} />
+          </div>
+        </a>
+        <a
+          href="https://github.com/TAavash"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#333] flex items-center justify-center text-white">
+            <FaGithub size={16} />
+          </div>
+        </a>
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
