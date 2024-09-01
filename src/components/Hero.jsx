@@ -32,24 +32,22 @@ const Hero = () => {
       <ComputersCanvas />
 
       {/* Social Media Links */}
-      <div className="absolute top-[80px] right-3 sm:top-[100px] sm:right-5 flex gap-2 sm:gap-4">
+      <div className="absolute top-[80px] right-3 sm:top-[100px] sm:right-5 flex gap-3 sm:gap-5 z-10">
         <a
           href="https://www.linkedin.com/in/aavash-tamang-131a0a2b5/"
           target="_blank"
           rel="noopener noreferrer"
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-opacity-80 transition ease-in-out duration-300"
         >
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A66C2] flex items-center justify-center text-white">
-            <FaLinkedin size={16} />
-          </div>
+          <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
         </a>
         <a
           href="https://github.com/TAavash"
           target="_blank"
           rel="noopener noreferrer"
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-opacity-80 transition ease-in-out duration-300"
         >
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#333] flex items-center justify-center text-white">
-            <FaGithub size={16} />
-          </div>
+          <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
         </a>
       </div>
 
