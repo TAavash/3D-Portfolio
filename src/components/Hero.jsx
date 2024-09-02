@@ -34,6 +34,13 @@ const Hero = () => {
       {/* Social Media Links */}
       <div className="absolute top-[80px] right-3 sm:top-[100px] sm:right-5 flex gap-3 sm:gap-5 z-10">
         <a
+          href="/CV.pdf"
+          download
+          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center text-white hover:bg-opacity-80 transition ease-in-out duration-300"
+        >
+          cv
+        </a>
+        <a
           href="https://www.linkedin.com/in/aavash-tamang-131a0a2b5/"
           target="_blank"
           rel="noopener noreferrer"
